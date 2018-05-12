@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3BA58B">
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        sl:scale_base_height="400"
+        sl:scale_base_width="400"
+        android:id="@+id/loding_img"
+        android:layout_margin="-80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            sl:scale_width="50"
+            sl:scale_height="50"
+            sl:scale_left="-40"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:background="@drawable/ic_five_img" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            sl:scale_left="20"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:background="@drawable/ic_char" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</FrameLayout>

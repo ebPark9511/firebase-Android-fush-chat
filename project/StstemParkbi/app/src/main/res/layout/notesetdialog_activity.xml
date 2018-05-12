@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.ssomai.android.scalablelayout.ScalableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal"
+    sl:scale_base_height="300"
+    sl:scale_base_width="250">
+
+    <EditText
+        android:id="@+id/put_title"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:lines="1"
+        android:singleLine="true"
+        android:hint="글 제목 입력"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        sl:scale_height="50"
+        sl:scale_textsize="20"
+        sl:scale_top="5"
+        sl:scale_width="150" />
+
+    <TextView
+        style="@style/AppTheme"
+        android:id="@+id/lcoation_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="위도와 경도"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        sl:scale_height="25"
+        sl:scale_textsize="15"
+        android:textColor="#5c5c5c"
+        sl:scale_top="50"
+        sl:scale_width="150" />
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        sl:cardBackgroundColor="#ffffff"
+        sl:cardCornerRadius="10dp"
+        sl:scale_height="150"
+        sl:scale_top="80"
+        sl:scale_width="200"
+        >
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            sl:scale_base_height="150"
+            sl:scale_base_width="200">
+
+
+            <EditText
+                android:id="@+id/put_not"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="내용을 입력해주세요."
+                android:textColor="#464646"
+                sl:scale_textsize="15"
+                sl:scale_width="200"
+                android:maxLines="5"
+                android:maxLength="40"
+                sl:scale_height="157"
+                android:textSize="15dp"
+                style="@style/AppTheme" />
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/dialog_put"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="확인"
+        sl:scale_height="40"
+        sl:scale_left="-2"
+        android:background="@drawable/selecotr1"
+        sl:scale_textsize="13"
+        sl:scale_top="130"
+        sl:scale_width="127" />
+
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="취소"
+        android:background="@drawable/selecotr1"
+        sl:scale_height="40"
+        sl:scale_left="123"
+        sl:scale_textsize="13"
+        sl:scale_top="130"
+        sl:scale_width="130" />
+
+</com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+

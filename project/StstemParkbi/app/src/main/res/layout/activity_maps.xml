@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapPackage.MapsActivity" />
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="150"
+        sl:scale_base_width="1000"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/open_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize="40"
+            sl:scale_width="1000"
+            android:layout_gravity="bottom"
+            sl:scale_height="150"
+            sl:scale_top="350"
+            android:background="#FFFFFF"  />
+
+        <TextView
+            android:id="@+id/open_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize="50"
+            sl:scale_width="800"
+            sl:scale_height="100"
+            sl:scale_top="30"
+            sl:scale_left="50"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="250"
+        sl:scale_base_width="500"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_width="60"
+            android:layout_gravity="center"
+            sl:scale_height="60"
+            sl:scale_left="180"
+            sl:scale_top="-10"
+            android:background="@drawable/ic_chat"
+            android:id="@+id/chat_img" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/open_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="700"
+        sl:scale_base_width="1000"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="#ffffff" >
+        <TextView
+            android:id="@+id/open_view_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize="50"
+            sl:scale_width="800"
+            sl:scale_height="100"
+            sl:scale_top="30"
+            sl:scale_left="50"
+            android:text="글 목록"/>
+
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_width="1000"
+            sl:scale_height="580"
+            android:listSelector="@drawable/selector"
+            sl:scale_top="120"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+
+
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="150"
+        sl:scale_base_width="1000"
+        android:background="#3BA58B"
+        android:layout_gravity="top"
+        android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/nick_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_height="150"
+        sl:scale_width="1000"
+        android:textStyle="bold"
+        sl:scale_textsize="55"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/mylocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_width="80"
+            android:layout_gravity="center"
+            sl:scale_height="80"
+            sl:scale_left="400"
+            sl:scale_top="-10"
+            android:background="@drawable/mylocation" />
+
+        <TextView
+            android:id="@+id/mylocation_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_width="300"
+            android:layout_gravity="center"
+            android:gravity="center"
+            sl:scale_height="80"
+            sl:scale_left="400"
+            android:textColor="#FFFFFF"
+            sl:scale_top="45"
+            sl:scale_textsize="30"
+            android:textStyle="bold"
+            android:text="나의위치"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="150"
+        sl:scale_base_width="1000"
+        android:background="#3BA58B">
+        <ImageView
+            android:id="@+id/peofle_fre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_width="80"
+            android:layout_gravity="center"
+            sl:scale_height="80"
+            sl:scale_left="400"
+            sl:scale_top="10"
+            android:background="@drawable/friends_svg" />
+        <TextView
+            android:id="@+id/chatid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_width="1000"
+            sl:scale_height="150"
+            sl:scale_textsize="50"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            sl:scale_top="-20"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/chatlocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_width="1000"
+            sl:scale_height="150"
+            sl:scale_textsize="40"
+            sl:scale_top="30"
+            android:textColor="#cfcfcf"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/im1"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:background="#ffffff"
+                android:id="@+id/listView1"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:divider="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:transcriptMode="alwaysScroll"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        sl:scale_base_height="150"
+        sl:scale_base_width="1000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:layout_below="@id/im1">
+
+        <ImageView
+            sl:scale_width="700"
+            sl:scale_height="100"
+            sl:scale_textsize="40"
+            sl:scale_left="50"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_weight="3"
+            android:background="@drawable/selector5"
+            android:maxLines="4"
+            />
+        <EditText
+            android:id="@+id/editText1"
+            sl:scale_width="650"
+            sl:scale_height="100"
+            sl:scale_textsize="40"
+            sl:scale_left="65"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_weight="3"
+            android:background="@null" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            sl:scale_width="180"
+            sl:scale_height="100"
+            sl:scale_textsize="35"
+            sl:scale_left="790"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="보내기"
+            android:background="@drawable/selector4"/>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</LinearLayout>

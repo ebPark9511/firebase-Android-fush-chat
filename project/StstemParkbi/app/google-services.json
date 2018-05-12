@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "417484399143",
+    "firebase_url": "https://parkbi-87125.firebaseio.com",
+    "project_id": "parkbi-87125",
+    "storage_bucket": "parkbi-87125.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417484399143:android:ba29c437bcc0000b",
+        "android_client_info": {
+          "package_name": "com.example.park.parkbi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417484399143-se4tioku3j2okr8vdt62ojojaktm1vmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsiWL124bYEzoYTsSq6WPG4wtRbAVJCMQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417484399143:android:11505f773fb5833e",
+        "android_client_info": {
+          "package_name": "com.example.park.ststemparkbi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417484399143-se4tioku3j2okr8vdt62ojojaktm1vmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsiWL124bYEzoYTsSq6WPG4wtRbAVJCMQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
